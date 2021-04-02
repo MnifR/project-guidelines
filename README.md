@@ -563,7 +563,7 @@ _Why:_
     ```
 
     _Why:_
-    > Because for CRUD we use HTTP methods on `resource` or `collection` URLs. The verbs we were talking about are actually `Controllers`. You usually don't develop many of these. [read more...](https://byrondover.github.io/post/restful-api-guidelines/#controller)
+    > Because for CRUD we use HTTP methods on `resource` or `collection` URLs. The verbs we were talking about are actually `Controllers`. You usually don't develop many of these. [read more...](https://github.com/byrondover/api-guidelines/blob/master/Guidelines.md#controller)
 
 * The request body or response type is JSON then please follow `camelCase` for `JSON` property names to maintain the consistency.
     
@@ -686,7 +686,7 @@ The **client app did something wrong** or The **API did something wrong**.
 
 * The amount of data the resource exposes should also be taken into account. The API consumer doesn't always need the full representation of a resource. Use a fields query parameter that takes a comma separated list of fields to include:
     ```
-    GET /student?fields=id,name,age,class
+    GET /students?fields=id,name,age,class
     ```
 * Pagination, filtering, and sorting don’t need to be supported from start for all resources. Document those resources that offer filtering and sorting.
 
